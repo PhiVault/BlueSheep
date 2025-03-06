@@ -38,7 +38,7 @@ This tool is strictly for *authorized security research and ethical penetration 
 
 ### Installation  
 ```sh
-git clone https://github.com/PhiVault/bluesheep.git
+git clone https://github.com/PhiVault/BlueSheep.git
 cd bluesheep
 chmod +x bluesheep.sh
 ./bluesheep.sh
