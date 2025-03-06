@@ -1,4 +1,4 @@
-# BlueSheep
+# BlueSheep ( By Khusi-Docker & PhiVault )
 Automatic Remote Malware Injection Tool
 
 ![Screenshot 2025-03-07 001041.png](<https://media-hosting.imagekit.io//d57e78e3fb1549ec/Screenshot 2025-03-07 001041.png?Expires=1835894462&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=n0ANGmOpDv-BCZRUV94dymS5BkGAGH8fRFKpNephVUozAbvo65Xp6lqHPmbL5jE3pxu~W3NVTB-T9GPINuVHz3UQudwXwdwjMvRBxt0ce2nPTB-uR3RPBvvClz87x22bgfQCt8RIh99vVQqjrtc~fDl9uxTucMWnwYewyJjJOhCuXb~D7QhX3QfVtXqHm4w88RM7ldNeRBZhxaEfDk4i5dxrEXrx0sS6Ei8S4EiCBR3zP96NEa272q34A-kAd9KULrK8zpVQ~EPhb6rBexizsMCY1P98cDK59mjYdS0dPnxftWjKW2DKQEGNRjmCVMncsU7ie5cD1w~EHO8qUDem-Q__>)
