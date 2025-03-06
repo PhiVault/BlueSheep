@@ -1,7 +1,6 @@
 # BlueSheep
 Automatic Remote Malware Injection Tool
 
-[https://static.vecteezy.com/system/resources/previews/047/392/479/non_2x/blue-sheep-sits-icon-illustration-vector.jpg](Bluesheep)
 ## Overview  
 BlueSheep is a remote system shutdown tool designed to *permanently disable* a vulnerable system until a new OS is installed. It operates using *Rainbow*, a custom-developed malware that automates the process, allowing a system to be taken down in minutes if vulnerabilities exist.  
 
