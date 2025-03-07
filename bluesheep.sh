@@ -8,7 +8,7 @@ if [ $( figlet rainblue | wc -c ) -eq "0" ]; then   # REQUIREMENTS CHECK
    clear
    sleep 1
    echo " Dependencied Not Installed , Performing Automatic Installation !"
-   apt install -y figlet
+   apt install -y figlet curl
 else
    echo " Dependencies Satisfied !"
 fi
