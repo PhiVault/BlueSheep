@@ -39,6 +39,7 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
    echo -e "Target In\e[32m$( curl -s ipinfo.io/$ip | grep "city" | cut -d ':' -f2 )\e[31mCity\n"
    echo -e "Target Current Region is\e[32m$( curl -s ipinfo.io/$ip | grep "region" | cut -d ':' -f2 )\n\e[31m"
    echo -e "Here are Target Co-ords\e[32m$( curl -s ipinfo.io/$ip | grep "loc" | cut -d ':' -f2 )\n\e[31m"
+   echo -e "Target Organization Name -\e[32m $( curl -s https://ipwhois.app/json/$tip | cut -d ':' -f19 | cut -d ',' -f1 )\e[31m\n"
    if [ -f core.bat ]; then
       sleep 1
       echo -e "MalWare Arranged\n"
