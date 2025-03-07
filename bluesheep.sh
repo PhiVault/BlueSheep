@@ -25,7 +25,7 @@ while [ $i -le 22 ]; do
 done
 echo -e "\t\t\t\t\t  By Khusi-docker & PhiVault" 
 echo -e "\t\t\t\t\t  GitHub Khusi-docker - \e[34mhttps://github.com/Khusi-docker\e[0m"
-echo -e "\t\t\t\t\t  GitHub PhiVault - \e[34mhttps://github.com/PhiVault\e[0m"
+echo -e "\t\t\t\t\t  GitHub PhiVault - \e[34mhttps://github.com/PhiVault\e[0m.  V1.1"
 
 read -p "Enter Target IP -> " tip
 read -p "Enter Your IP -> " vic
