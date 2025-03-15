@@ -31,7 +31,7 @@ echo -e "\t\t\t\t\t  GitHub PhiVault - \e[34mhttps://github.com/PhiVault\e[0m.  
 read -p "Enter Target IP -> " tip
 read -p "Enter Your IP -> " vic
 sleep 1
-echo -e "\e[31m\nAnalzying Target"
+echo -e "\e[31m\nAnalyzing Target"
 if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
    sleep 1
    echo -e "\nTarget Locked & Connected !\n\nChecking For RainBow MalWare\n"
@@ -83,10 +83,10 @@ if [ $( ping -c 1 $tip | grep "1 received" | wc -c ) -eq "60" ]; then
       fi
    else
       sleep 1
-      echo -e "MalWare Not Found\n\nAborted .."
+      echo -e "\nMalWare Not Found\n\nAborted .."
    fi
 else
    sleep 1
-   echo "Target Unreachable , Try Again Later !"
+   echo -e "\nTarget Unreachable , Try Again Later !"
 fi
 echo -e "\e[0m"
