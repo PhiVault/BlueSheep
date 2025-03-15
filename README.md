@@ -5,6 +5,8 @@ Automatic Remote Malware Injection Tool ( Developed By Khusi-Docker & PhiVault )
 ## Overview  
 BlueSheep is a remote system shutdown tool designed to *permanently disable* a vulnerable system until a new OS is installed. It operates using *Rainbow*, our custom-developed malware that automates the process, allowing a system to be taken down in minutes if vulnerabilities exist.  
 
+![Screenshot 2025-03-15 110339.png](<https://media-hosting.imagekit.io//134e0e3159c84ef1/Screenshot 2025-03-15 110339.png?Expires=1836624919&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=YcEBm9tbILPV572KizlF~R26Xy67k6CjIw7eUP2AqBW0MC9x6w30Ri7BdLZ47xy6HcFi1FEVaZxL68ObPFEykpl1IjNGKRi9C7OlTac5Ae9zV9GDjqXWzQ7pRMBBkdzl3w~x0EgS6lGShuMxgx-rsOAd8v9fb3swFx9EK1TojpNaXGnYq59sBPy5DwI19wVuIUAT0~N~EhmFKkcdOy9RI-q-HlrNtEvglkrDx0RWLWG0CW63AgzLqqjq7aPEppr7GmdlGUM-Kn-D2Ok3mHVVr~Xn2PilTZQ5AZ1-cGOuPfPGmbRdXMbzARr5aVKX4dBb7Rs6-IgoPDZMqGeuzKdTZQ__>)
+
 ---
 
 ## Disclaimer  
